@@ -53,5 +53,11 @@
       "38": "images/icon-38.png"
     },
     "default_title": "gaiyas"
+  },
+  "applications": {
+    "gecko": {
+      "id": "gaiyas@efcl.info",
+      "strict_min_version": "42.0"
+    }
   }
 }
