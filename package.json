@@ -7,7 +7,8 @@
   "scripts": {
     "build": "yarn run build:core && yarn run build:app",
     "build:core": "cd core && yarn run build",
-    "build:app": "gulp build"
+    "build:app": "gulp build",
+    "dist": "npm run build && (cd dist && web-ext build)"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -32,6 +33,7 @@
     "gulp-zip": "^3.2.0",
     "main-bower-files": "^2.11.1",
     "run-sequence": "^1.1.5",
+    "web-ext": "^2.7.0",
     "wiredep": "^4.0.0"
   },
   "eslintConfig": {
