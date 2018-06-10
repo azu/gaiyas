@@ -8,7 +8,7 @@
   display: flex;
   background-color: $BgColor;
   font-size: 13px;
-  width: 250px;
+  width: 300px;
   height: 100%;
   min-width: initial;
   text-align: initial;
@@ -45,7 +45,7 @@
   }
 
   &.closed {
-    right: -250px;
+    right: -300px;
 
   }
 
