@@ -36,7 +36,7 @@ const updateHatebuButton = (tabId, url) => {
     // set timeStamp for prune cache popup.html
     chrome.browserAction.setPopup({
       tabId: tabId,
-      popup: 'popup.html?chrome-extension-gaiyas=' + url + "&timeStamp=" + data.timeStamp
+      popup: 'popup.html?chrome-extension-gaiyas=' + url + '&timeStamp=' + data.timeStamp
     });
     chrome.browserAction.setBadgeBackgroundColor({ color: 'rgba(37, 37, 38, 0.9)' });
     chrome.browserAction.setBadgeText({ text: String(data.count) });
