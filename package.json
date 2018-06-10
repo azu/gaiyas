@@ -9,7 +9,7 @@
     "build:core": "cd core && yarn run build",
     "build:app": "gulp build",
     "web-ext": "web-ext",
-    "dist": "npm run build && (cd dist && web-ext build --overwrite-dest"
+    "dist": "npm run build && (cd dist && web-ext build --overwrite-dest)"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
