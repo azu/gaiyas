@@ -25,3 +25,8 @@ Gaiyas
 And
 
   yarn start
+
+## Dist
+
+  yarn dist
+  cd dist && web-ext sign --api-key
