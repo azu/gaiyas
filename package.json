@@ -5,6 +5,7 @@
     "node": ">=0.8.0"
   },
   "scripts": {
+    "start": "yarn run build && web-ext run -s dist",
     "build": "yarn run build:core && yarn run build:app",
     "build:core": "cd core && yarn run build",
     "build:app": "gulp build",
