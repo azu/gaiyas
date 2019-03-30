@@ -18,15 +18,13 @@ Gaiyas
 
 ## Development
 
-  yarn
-  cd core && yarn
-  yarn run build
-  
-And
-
-  yarn start
+```
+yarn start
+```
 
 ## Dist
 
-  yarn dist
-  cd dist && web-ext sign --api-key
+```
+yarn dist
+cd dist && web-ext sign --api-key
+```
