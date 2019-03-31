@@ -3,12 +3,11 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Alt+Shift+C",
-        "mac": "Alt+Shift+C"
+        "default": "Ctrl+Shift+9"
       }
     }
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
