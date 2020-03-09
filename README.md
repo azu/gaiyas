@@ -30,6 +30,8 @@ yarn dist
 
 ## Publish
 
+Get JWT https://addons.mozilla.org/ja/developers/addon/api/key/
+
 ```
 yarn dist
 cd dist && web-ext sign --api-key $JWT_SECRETE_KEY
