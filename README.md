@@ -34,5 +34,6 @@ Get JWT https://addons.mozilla.org/ja/developers/addon/api/key/
 
 ```
 yarn dist
-cd dist && web-ext sign --api-key $JWT_SECRETE_KEY
+cd dist
+web-ext sign --api-key XXXX --api-secret YYY
 ```
