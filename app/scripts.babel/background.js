@@ -11,9 +11,11 @@ const fetchHatebuCount = (url) => {
       return Promise.resolve(cache);
     }
   }
-  return fetch(`http://api.b.st-hatena.com/entry.counts?url=${encodeURIComponent(url)}`)
+  return fetch(`https://bookmark.hatenaapis.com/count/entry?url=${encodeURIComponent(url)}`)
     .then(res => res.json())
-    .then(json => json[url])
+    .then(json => {
+      return json[url];
+    })
     .then(count => {
       if (typeof count === 'number') {
         const timeStamp = Date.now();

@@ -5,11 +5,9 @@ import moment from 'moment'
 
 const B = {}
 if (location.protocol === 'https:') {
-  B.apiOrigin = 'https://b.hatena.ne.jp'
   B.starOrigin = 'https://s.hatena.com'
 } else {
-  B.apiOrigin = 'http://api.b.st-hatena.com'
-  B.starOrigin = 'http://s.hatena.com'
+  B.starOrigin = 'https://s.hatena.com'
 }
 
 let theRanking = []
@@ -72,7 +70,7 @@ export function fetchPosts(targetUrl) {
   return (dispatch) => {
     return $.ajax({
       // dataType: 'jsonp', // Needs on development
-      url: `${B.apiOrigin}/entry/jsonlite/?url=${encodeURIComponent(targetUrl)}`,
+      url: `https://b.hatena.ne.jp/entry/jsonlite/?url=${encodeURIComponent(targetUrl)}`,
     })
     .done((data) => {
       if (data && data.bookmarks.length > 0) {

@@ -26,5 +26,11 @@ yarn start
 
 ```
 yarn dist
-cd dist && web-ext sign --api-key
+```
+
+## Publish
+
+```
+yarn dist
+cd dist && web-ext sign --api-key $JWT_SECRETE_KEY
 ```
