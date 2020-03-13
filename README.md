@@ -24,6 +24,8 @@ yarn start
 
 ## Dist
 
+Require: Node.js 10. Node 12 is not work currently. Please PR.
+
 ```
 yarn dist
 ```
